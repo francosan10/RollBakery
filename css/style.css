@@ -1,0 +1,419 @@
+/* importo fuente titulo */
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+/* importo fuente parrafos */
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400&display=swap");
+/* importo fuente logo */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5dbcd;
+}
+
+main {
+  flex-grow: 1;
+}
+
+/* Estilos Navbar */
+.navEstilo {
+  background: #492a1f;
+}
+
+.navLogo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  color: #f5dbcd;
+}
+
+.iRosaclaro {
+  color: #f5dbcd;
+}
+
+.bgBotonHamburguesa {
+  background-color: #f5dbcd;
+}
+
+.fuenteNav {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  color: #f5dbcd;
+}
+
+/* Estilos Footer*/
+
+.footerEstilo {
+  background: #492a1f;
+}
+
+.footerLogo {
+  font-family: "Dancing Script", sans-serif;
+  font-size: 2rem;
+  color: #f5dbcd;
+}
+
+.iRosaclaro {
+  color: #f5dbcd;
+}
+
+.linkFooter:hover {
+  color: #e57a40;
+}
+
+.footerTitulos {
+  font-family: "Righteous", cursive;
+  font-size: 1rem;
+  color: #f5dbcd;
+}
+
+footer a {
+  text-decoration: none;
+  color: #f5dbcd;
+}
+
+.navTitulos {
+  font-family: "Righteous", cursive;
+  font-size: 1rem;
+  color: #f5dbcd;
+}
+
+/* Estilos Login */
+.formLogin {
+  border: 1px solid #492a1f;
+  font-family: "Righteous", cursive;
+  font-size: 1rem;
+  color: #492a1f;
+}
+
+.iBordo {
+  color: #492a1f;
+  text-decoration: none;
+  font-family: "Righteous", cursive;
+  font-size: 1rem;
+}
+
+.aLogin {
+  text-decoration: none;
+  color: #f5dbcd;
+}
+
+.linkRedesLogin:hover {
+  color: #e57a40;
+}
+
+/* Estilos Registro */
+.tituloPaginaregistro {
+  font-family: "Righteous", cursive;
+  color: #492a1f;
+}
+
+.textoPaginaregistro {
+  font-family: "Righteous", cursive;
+}
+
+.fondoMain {
+  background-color: #f5dbcd;
+}
+
+.inputFormulario {
+  border: 1px solid #492a1f;
+  font-size: 1rem;
+  color: #492a1f;
+}
+
+.formRegistro {
+  color: #492a1f;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Estilos Index */
+.imagenCarruselindex {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+hr {
+  border: 1px solid #492a1f;
+}
+
+/* Estilos Categoria */
+.imagenTorta {
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+}
+
+.imagenTorta img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.zoomCardcategoria {
+  transition: transform 0.3s ease-in-out;
+}
+.zoomCardcategoria:hover {
+  transform: scale(1.1);
+}
+.zoomCardcategoria:hover:after {
+  transform: scale(0.9);
+}
+
+.aCardscategoria {
+  text-decoration: none;
+}
+.h5Cardscategoria {
+  font-family: "Righteous", cursive;
+  font-size: 1.2rem;
+  color: #492a1f;
+}
+.spanCardscategoria {
+  font-family: "Jost", sans-serif;
+  font-size: 1.2rem;
+  color: #492a1f;
+}
+
+.tituloCategoria {
+  font-family: "Righteous", cursive;
+  font-size: 2rem;
+  color: #492a1f;
+}
+
+.parrafoBannercategoria {
+  font-family: "Jost", sans-serif;
+  font-size: 1.5rem;
+  color: #492a1f;
+  text-align: center;
+}
+
+.botonPaginacion {
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #f5dbcd;
+  border: none;
+  border-bottom: 4px solid #492a1f;
+  background: rgba(200, 161, 132, 0.7);
+  background: -moz-linear-gradient(
+    top,
+    rgba(200, 161, 132, 0.7) 0%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(200, 161, 132, 0.7) 0%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(200, 161, 132, 0.7) 0%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba($gradient,.7)',endColorstr='rgba($gradient,.9)',GradientType=0);
+  border-radius: 7px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.botonPaginacionactive {
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #f5dbcd;
+  border: none;
+  border-bottom: 4px solid #492a1f;
+  background: #492a1f;
+  background: -moz-linear-gradient(
+    top,
+    rgba(76, 52, 52, 0.7) 0%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(97, 65, 65, 0.7) 0%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(76, 42, 42, 0.7) 0%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba($gradient,.7)',endColorstr='rgba($gradient,.9)',GradientType=0);
+  border-radius: 7px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.paginacionA a {
+  text-decoration: none;
+}
+
+/* pagina de contacto */
+.mainContacto {
+  background-color: #f5dbcd;
+  font-family: "Jost", sans-serif;
+  color: #492a1f;
+}
+.mainContacto h1,
+h2,
+h3,
+h4 {
+  font-family: "Righteous", cursive;
+}
+/* mapa contacto */
+.mapaContacto {
+  border-radius: 10px;
+  height: 40vh;
+}
+
+/* pagina nosotros */
+.cardNosotros {
+  display: flex;
+  align-items: center;
+  background-color: #fca58a;
+  box-shadow: 5px 5px 10px #492a1f8a;
+}
+.cardNosotros img {
+  width: 80%;
+  height: auto;
+  border-radius: 50%;
+}
+.cardNosotros h4 {
+  color: #f5dbcd;
+}
+
+/* pagina error 404 */
+.medio404 {
+  max-width: 320px;
+  height: 320px;
+  border: 10px dashed #fa8072;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.titulo404 {
+  font-size: 8rem;
+}
+.parrafo404 {
+  font-size: 4rem;
+}
+.link404 {
+  text-decoration: none;
+  color: #fca58a;
+  font-weight: 900;
+}
+.link404:hover {
+  color: #fa8072;
+}
+
+/* Estilo Boton Principal */
+.botonPrincipal {
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #f5dbcd;
+  border: none;
+  border-bottom: 4px solid #492a1f;
+  background: #492a1f;
+  background: -moz-linear-gradient(
+    top,
+    rgba(76, 52, 52, 0.7) 0%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(97, 65, 65, 0.7) 0%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(76, 42, 42, 0.7) 0%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba($gradient,.7)',endColorstr='rgba($gradient,.9)',GradientType=0);
+  border-radius: 7px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.botonPrincipalhover:hover {
+  color: #f5dbcd;
+  background: linear-gradient(
+    to bottom,
+    rgba(200, 161, 132, 0.7) 0%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba($gradient,.7)',endColorstr='rgba($gradient,.9)',GradientType=0);
+  animation: ease-in-out 5s;
+}
+
+.flexCategoriaboton {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* Media Queries */
+/* Tamaño Chico o SM */
+@media screen and (max-width: 767px) {
+  .h5Cardscategoria {
+    font-size: 0.8rem;
+  }
+  .spanCardscategoria {
+    font-size: 0.8rem;
+  }
+  .dCenterbannerCategoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .parrafoBannercategoria {
+    font-size: 1rem;
+  }
+
+  .zoomCardcategoria {
+    transition:none;
+  }
+  .zoomCardcategoria:hover {
+    transform: none;
+  }
+  .zoomCardcategoria:hover:after {
+    transform: none;
+  }
+
+
+
+
+
+  .imagenCarruselindex {
+    width: 100%;
+    height: auto;
+  }
+
+  .dNoneindex {
+    display: none;
+  }
+
+  .smError {
+    font-size: 1.2rem;
+  }
+
+  .smTitulo {
+    font-size: 1.8rem;
+  }
+
+  .smCardCarrito {
+    font-size: 1.2rem;
+  }
+}
+
+/* Tamaño Medio o MD */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .dNonelogin {
+    display: none;
+  }
+}

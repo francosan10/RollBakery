@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Roll Bakery Pasteleria" />
+    <meta name="keywords" content="pasteleria, rollbakery, pattiserie" />
+    <meta name="author" content="Team5" />
+    <title>Box para Regalo</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark navEstilo">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <i class="fa-solid fa-cookie-bite fa-xl iRosaclaro"></i>
+            <i class="fa-solid fa-less-than iRosaclaro"></i>
+            <span class="navLogo">Roll Bakery</span>
+            <i class="fa-solid fa-greater-than iRosaclaro"></i>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link navTitulos"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navTitulos" href="../pages/registro.html"
+                  >Crear cuenta</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navTitulos" href="../pages/login.html"
+                  >Iniciar sesión</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link navTitulos"
+                  aria-current="page"
+                  href="../pages/acerca-de-nosotros.html"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link navTitulos"
+                  aria-current="page"
+                  href="../pages/contacto.html"
+                  >Contacto</a
+                >
+              </li>
+              <li class="nav-item">
+                <button
+                  class="nav-link navTitulos"
+                  aria-current="page"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalTortaChocolate"
+                >
+                  <i class="fa-solid fa-cart-shopping iRosaclaro"></i>
+                </button>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                id="busquedaProducto"
+                type="search"
+                placeholder="Buscar producto"
+                aria-label="busquedaProducto"
+              />
+              <button type="button" class="btn btn-outline-light">
+                <i class="fa-solid fa-magnifying-glass fa-xl iRosaclaro"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- ventana modal carrito torta -->
+      <section
+        class="modal"
+        tabindex="-1"
+        id="modalTortaChocolate"
+        aria-labelledby="modalTortaChocolate"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Carrito de Compras</h5>
+              <i class="fa-solid fa-cart-shopping iBordo ms-2"></i>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="container modal-body">
+              <div class="row">
+                <div class="col-4">
+                  <img
+                    src="../img/tortaChocolate1.jpg"
+                    class="img-fluid rounded"
+                    alt="Torta de Chocolate y Avellanas Div"
+                  />
+                </div>
+                <div class="col-6">
+                  <h5 class="h5Cardscategoria text-start smCardCarrito">
+                    Torta de Chocolate y Avellanas Div
+                  </h5>
+                </div>
+                <div class="col-2">
+                  <i class="fa-solid fa-trash fa-xl"></i>
+                </div>
+              </div>
+            </div>
+            <div class="container modal-body">
+              <div class="row">
+                <div class="col-4">
+                  <img
+                    src="../img/tortaVainilla1.jpg"
+                    class="img-fluid rounded"
+                    alt="Torta de Vainilla Class"
+                  />
+                </div>
+                <div class="col-6">
+                  <h5 class="h5Cardscategoria text-start smCardCarrito">
+                    Torta de Vainilla Class
+                  </h5>
+                </div>
+                <div class="col-2">
+                  <i class="fa-solid fa-trash fa-xl"></i>
+                </div>
+              </div>
+            </div>
+            <div>
+              <section aria-label="Cantidad de productos">
+                <div class="d-flex justify-content-center paginacionA">
+                  <button type="button" disabled class="botonPaginacion mx-1">
+                    -
+                  </button>
+                  <input type="number" class="botonPaginacion mx-1 w-25" />
+                  <button type="button" disabled class="botonPaginacion mx-1">
+                    +
+                  </button>
+                </div>
+              </section>
+            </div>
+            <div class="modal-footer">
+              <span class="smCardCarrito">Total: $15800</span>
+              <button type="button" class="btn botonPrincipal">
+                <a class="aLogin" href="../pages/error-404.html">Comprar</a>
+              </button>
+              <button type="button" class="btn botonPrincipal">
+                <a class="aLogin" href="../pages/error-404.html"
+                  >Añadir más productos</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <!-- botones categorias -->
+      <section class="container my-3">
+        <h3 class="my-3 tituloCategoria text-center">
+          Productos por Categoría
+        </h3>
+        <section class="flexCategoriaboton">
+          <div>
+            <a
+              href="../pages/categoria-tortas-y-bombones.html"
+              class="btn botonPrincipal botonPrincipalhover"
+              >Tortas y Bombones</a
+            >
+          </div>
+          <div>
+            <a
+              href="../pages/categoria-macarons.html"
+              class="btn botonPrincipal botonPrincipalhover"
+              >Macarons</a
+            >
+          </div>
+          <div>
+            <a
+              href="../pages/categoria-box-para-regalo.html"
+              class="btn botonPrincipal botonPrincipalhover"
+              >Box para Regalo</a
+            >
+          </div>
+          <div>
+            <a
+              href="../pages/error-404.html"
+              class="btn botonPrincipal botonPrincipalhover"
+              >Promos Especiales</a
+            >
+          </div>
+          <div>
+            <a
+              href="../pages/error-404.html"
+              class="btn botonPrincipal botonPrincipalhover"
+              >Festejá tu cumple con nosotros</a
+            >
+          </div>
+          <div>
+            <a
+              href="../pages/error-404.html"
+              class="btn botonPrincipal botonPrincipalhover"
+              >Más Productos y servicios</a
+            >
+          </div>
+        </section>
+      </section>
+      <!-- banner box de regalo -->
+      <section class="container dCenterbannerCategoria">
+        <img
+          src="../img/boxRegalosbanner.jpg"
+          alt="box regalos banner"
+          class="img-fluid rounded-circle w-25 mb-4"
+        />
+        <p class="parrafoBannercategoria">
+          ✨🌈¡Celebra los momentos dulces de la vida con nuestra exclusiva caja
+          de regalos! Cada caja está cuidadosamente seleccionada y diseñada para
+          sorprenderte con una variedad de delicias irresistibles.🌈✨
+        </p>
+      </section>
+      <!-- box de regalos -->
+      <section class="container my-4">
+        <h2 class="mb-3 tituloCategoria">Destacados</h2>
+        <article class="row mb-3 aCardscategoria">
+          <div class="col-6 col-md-3 col-lg-3 mb-3">
+            <a
+              href="../pages/error-404.html"
+              class="card h-100 shadow zoomCardcategoria aCardscategoria"
+            >
+              <img
+                src="../img/boxTortas2.jpg"
+                class="card-img-top img-fluid"
+                alt="Box Tortas"
+              />
+              <div class="card-body text-center h-100">
+                <h5 class="h5Cardscategoria">
+                  Box Elon: 2 Minitortas a elección
+                </h5>
+              </div>
+              <div class="card-footer h-25 text-center spanCardscategoria">
+                <span>$25000</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-3 col-lg-3 mb-3">
+            <a
+              href="../pages/error-404.html"
+              class="card h-100 shadow zoomCardcategoria aCardscategoria"
+            >
+              <img
+                src="../img/boxDesayuno2.jpg"
+                class="card-img-top img-fluid"
+                alt="Box desayuno"
+              />
+              <div class="card-body text-center h-100">
+                <h5 class="h5Cardscategoria">
+                  Box Mark: Infusión + 2 productos de especialidad
+                </h5>
+              </div>
+              <div class="card-footer h-25 text-center spanCardscategoria">
+                <span>$7200</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-3 col-lg-3 mb-3">
+            <a
+              href="../pages/error-404.html"
+              class="card h-100 shadow zoomCardcategoria aCardscategoria"
+            >
+              <img
+                src="../img/boxHalloween2.jpg"
+                class="card-img-top img-fluid"
+                alt="Box hallowenn"
+              />
+              <div class="card-body text-center h-100">
+                <h5 class="h5Cardscategoria">
+                  Box Lovelace de Halloween: 5 Macarons temáticos
+                </h5>
+              </div>
+              <div class="card-footer h-25 text-center spanCardscategoria">
+                <span>Consultar</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-3 col-lg-3 mb-3">
+            <a
+              href="../pages/error-404.html"
+              class="card h-100 shadow zoomCardcategoria aCardscategoria"
+            >
+              <img
+                src="../img/boxNavidad1.jpg"
+                class="card-img-top img-fluid"
+                alt="Box navidad"
+              />
+              <div class="card-body text-center h-100">
+                <h5 class="h5Cardscategoria">
+                  Box Gates de Navidad: Sidra + 2 productos de especialidad
+                </h5>
+              </div>
+              <div class="card-footer h-25 text-center spanCardscategoria">
+                <span>Consultar</span>
+              </div>
+            </a>
+          </div>
+        </article>
+        <!-- Paginacion -->
+        <nav aria-label="Control de paginacion">
+          <ul
+            class="pagination pagination-lg d-flex justify-content-center paginacionA"
+          >
+            <li class="botonPaginacionactive mx-1" aria-current="page">
+              <span class="botonPaginacionactive">1</span>
+            </li>
+            <li class="botonPaginacion mx-1">
+              <a class="botonPaginacion" href="../pages/error-404.html">2</a>
+            </li>
+            <li class="botonPaginacion mx-1">
+              <a class="botonPaginacion" href="../pages/error-404.html">3</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </main>
+    <footer class="py-3 py-4 footerEstilo">
+      <div class="container text-center text-md-start">
+        <div class="row">
+          <div class="col-md-5 col-lg-4 text-center text-lg-start">
+            <i class="fa-solid fa-cookie-bite fa-xl iRosaclaro"></i>
+            <i class="fa-solid fa-less-than iRosaclaro"></i>
+            <span class="footerLogo">Roll Bakery</span>
+            <i class="fa-solid fa-greater-than iRosaclaro"></i>
+          </div>
+          <div class="col-md-4 col-lg-4 footerTitulos">
+            <h5>Productos</h5>
+            <ul class="list-unstyled">
+              <a
+                href="../pages/categoria-tortas-y-bombones.html"
+                class="linkFooter"
+                ><li>Tortas y Bombones</li></a
+              >
+              <a href="../pages/categoria-macarons.html" class="linkFooter"
+                ><li>Macarons</li></a
+              >
+              <a
+                href="../pages/categoria-box-para-regalo.html"
+                class="linkFooter"
+                ><li>Box para regalo</li></a
+              >
+              <a href="../pages/error-404.html" class="linkFooter"
+                ><li>Festejá tu cumple con nosotros</li></a
+              >
+            </ul>
+          </div>
+          <div class="col-md-3 col-lg-4 footerTitulos">
+            <h5>Seguinos</h5>
+            <ul class="list-unstyled">
+              <div>
+                <a href="../pages/error-404.html"
+                  ><i class="bi bi-instagram fs-4 iRosaclaro linkFooter"></i
+                ></a>
+                <a href="../pages/error-404.html" class="mx-2"
+                  ><i class="bi bi-facebook fs-4 iRosaclaro linkFooter"></i
+                ></a>
+                <a href="../pages/error-404.html"
+                  ><i class="bi bi-twitter fs-4 iRosaclaro linkFooter"></i
+                ></a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
